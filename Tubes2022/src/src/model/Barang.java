@@ -26,8 +26,8 @@ public class Barang {
         return kategori;
     }
 
-    public void setKategori(Kategori id_kategori) {
-        this.kategori = id_kategori;
+    public void setKategori(Kategori kategori) {
+        this.kategori = kategori;
     }
 
     public String getNama() {
@@ -45,6 +45,5 @@ public class Barang {
     public void setHarga(String harga) {
         this.harga = harga;
     }
-    
-    
+
 }

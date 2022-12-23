@@ -47,11 +47,11 @@ public class KategoriFrame extends JFrame{
        
        tableModel= new KategoriTableModel(kategoriList);
        table.setModel(tableModel);
-       row = table.getSelectedRow();
-       col = table.getSelectedColumn();
+//       row = table.getSelectedRow();
+//       col = table.getSelectedColumn();
        
-       JButton btnHapus = new JButton("Hapus");
-       btnHapus.setBounds(15,400,350,40);
+//       JButton btnHapus = new JButton("Hapus");
+//       btnHapus.setBounds(15,400,350,40);
        
        KategoriButtonSimpanActionListener actionListenerSimpan = new KategoriButtonSimpanActionListener(this,kategoriDao);
        btnSimpan.addActionListener(actionListenerSimpan);

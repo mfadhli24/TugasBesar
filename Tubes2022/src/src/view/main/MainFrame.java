@@ -86,16 +86,16 @@ public class MainFrame extends javax.swing.JFrame {
         panel1.add(buttonBarang);
         
 
-        panel2 = new JPanel();
-        panel2.setLayout(new GridLayout(3, 1));
-        panel2.add(lblNama);
-        panel2.add(lblBarang);
-        panel2.add(lblQyt);
-        
-        panel3 = new JPanel();
-        panel3.setLayout(new GridLayout(3, 1));
-        panel3.add(textFieldNama);
-        panel3.add(textFieldQyt);
+//        panel2 = new JPanel();
+//        panel2.setLayout(new GridLayout(3, 1));
+//        panel2.add(lblNama);
+//        panel2.add(lblBarang);
+//        panel2.add(lblQyt);
+//        
+//        panel3 = new JPanel();
+//        panel3.setLayout(new GridLayout(3, 1));
+//        panel3.add(textFieldNama);
+//        panel3.add(textFieldQyt);
         
 //        panel4 = new JPanel();
 //        panel4.setLayout(new GridLayout(1, 1));
@@ -105,8 +105,8 @@ public class MainFrame extends javax.swing.JFrame {
         Container container = getContentPane();
         container.setLayout(new BorderLayout());
         container.add(panel1,BorderLayout.PAGE_START);
-        container.add(panel2, BorderLayout.LINE_START);
-        container.add(panel3, BorderLayout.LINE_END);
+//        container.add(panel2, BorderLayout.LINE_START);
+//        container.add(panel3, BorderLayout.LINE_END);
 //        container.add(panel4, BorderLayout.SOUTH);
     }
     

@@ -16,7 +16,6 @@ public class MainButtonLoginActionListener implements ActionListener {
 
     public MainButtonLoginActionListener(MainFrame mainFrame) {
         this.mainFrame = mainFrame;
-//        this.loginDao = loginDao;
     }
     
     @Override

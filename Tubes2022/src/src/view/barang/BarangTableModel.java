@@ -5,9 +5,11 @@
 package src.view.barang;
 
 import java.util.List;
+import java.util.ArrayList;
 import javax.swing.table.*;
 import src.dao.BarangDao;
-import src.dao.KategoriDao;
+//import src.dao.KategoriDao;
+import javax.swing.table.AbstractTableModel;
 import src.model.*;
 
 /**
@@ -62,11 +64,14 @@ public class BarangTableModel extends AbstractTableModel{
        switch (col)
        {
            case 0:
-               rowItem.getId();
                rowItem.setNama((String) aValue);
-//               rowItem.setId_kategori((String) aValue);
+               break;
+           case 1:
                rowItem.setHarga((String) aValue);
                break;
+//           case 2:
+////               rowItem.setId_kategori((Kategori) aValue);
+//               break;
            
         }
         BarangDao dao = new BarangDao();

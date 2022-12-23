@@ -26,15 +26,17 @@ public class BarangButtonSimpanActionListener implements ActionListener{
         this.barangDao = barangDao;
     }
     
-    @Override
+//    @Override
     public void actionPerformed(ActionEvent e) {
         String nama = this.barangFrame.getNama();
+//        int h = Integer.parseInt(this.barangFrame.getHarga());
         String harga = this.barangFrame.getHarga();
+        Kategori kategori = this.barangFrame.getKategori();
         Barang bar = new Barang();
         bar.setId(UUID.randomUUID().toString());
         bar.setNama(nama);
         bar.setHarga(harga);
-//        bar.setKategori(barang);
+        bar.setKategori(kategori);
         
         this.barangFrame.addBarang(bar);
         this.barangDao.insert(bar);
