@@ -27,6 +27,8 @@ public class Kategori {
     public void setNamaKategori(String namaKategori) {
         this.namaKategori = namaKategori;
     }
-    
-    
+
+    public void setNama(String nama) {
+    }
+
 }
