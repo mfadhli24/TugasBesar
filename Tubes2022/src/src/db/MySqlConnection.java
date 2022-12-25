@@ -33,10 +33,10 @@ public class MySqlConnection {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS);
-            System.out.println("koneksi berhasil;");
+            System.out.println("Koneksi ke database berhasil;");
         } catch (Exception e) {
             e.printStackTrace();
-            System.err.println("koneksi gagal " +e.getMessage());
+            System.err.println("Koneksi ke database gagal " +e.getMessage());
         }
         return connection;
     }
